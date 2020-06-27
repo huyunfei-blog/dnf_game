@@ -11,6 +11,6 @@
 
 ![](https://github.com/Tjuvenile/dnf_game/raw/master/project_screenshot/select_map_level.png)
 
-![](https://github.com/Tjuvenile/dnf_game/raw/master/project_screenshot/select_game.png)
+![](https://github.com/Tjuvenile/dnf_game/raw/master/project_screenshot/show_game.png)
 
-![](https://github.com/Tjuvenile/dnf_game/raw/master/project_screenshot/select_game_2.png)
+![](https://github.com/Tjuvenile/dnf_game/raw/master/project_screenshot/show_game_2.png)
