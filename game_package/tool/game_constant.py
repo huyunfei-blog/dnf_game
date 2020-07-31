@@ -16,7 +16,6 @@ pygame 在windows中(0,0)的坐标  (360,195)
 # FPS = 13
 FPS = 13
 
-
 #game Title
 WINDOW_TITLE = "三月丛林 v1.0 三月软件·Python组出品"
 #game icon

@@ -133,7 +133,7 @@ class Login(object):
 
         self.fluents.draw(self.screen)
 
-    def  __event_handler(self):
+    def __event_handler(self):
         '''
         事件监听,如果事件之间用if来判断的话，会很灵敏
         '''

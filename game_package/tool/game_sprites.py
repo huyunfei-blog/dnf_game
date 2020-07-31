@@ -438,40 +438,7 @@ class Person(GameSprite):
             else:
                 self.rect.topright = (first_coordinate[0] - num_list_right[x_index],first_coordinate[1] + num_list_right[x_index+1])
 
-        image_count = num_list_right.__len__() // 2
-        x_index = index % image_count * 2
-        if not is_face_left:
-            self.image = GameTool.cartoon_image( self, right_image, index, image_count )
-            self.rect.size = self.image.get_rect().size
-            if index % image_count == 0:
-                if is_person:
-                    if index != 0:
-                        self.rect.topleft = (
-                            first_coordinate[0] + num_list_right[0], first_coordinate[1] + num_list_right[1])
-                    else:
-                        self.first_coordinate = [*self.rect.topleft]
-                else:
-                    self.rect.topleft = (
-                        first_coordinate[0] + num_list_right[0], first_coordinate[1] + num_list_right[1])
-            else:
-                self.rect.topleft = (first_coordinate[0] + num_list_right[x_index],first_coordinate[1] + num_list_right[x_index+1])
 
-        else:
-            self.image = GameTool.cartoon_flip_image( self, right_image, index, image_count )
-            self.rect.size = self.image.get_rect().size
-            if index % image_count == 0:
-                if is_person:
-                    if index != 0:
-                        self.rect.topright = (
-                            first_coordinate[0] - num_list_right[0], first_coordinate[1] + num_list_right[1])
-                    else:
-                        self.first_size = self.rect.size
-                        self.first_coordinate = [*self.rect.topright]
-                else:
-                    self.rect.topright = (
-                        first_coordinate[0] - num_list_right[0], first_coordinate[1] + num_list_right[1])
-            else:
-                self.rect.topright = (first_coordinate[0] - num_list_right[x_index],first_coordinate[1] + num_list_right[x_index+1])
 
 #TODO 人物击打怪物后，怪物有僵直和停顿图片，还没做
 #FIXME：当人物和怪物接触，人物离开怪物的时候，怪物坐标会出现瞬移，不知道为什么

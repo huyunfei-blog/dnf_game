@@ -1,12 +1,8 @@
 #-*- coding:utf-8 -*-
 import sys
-import time
 
-import pygame
 from pygame.time import delay
 
-from game_package.client.login_client import Login
-from game_package.tool import game_constant, monster_constant, sword_man_constant, sword_constant
 from game_package.tool.game_sprites import *
 
 '''
